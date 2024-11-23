@@ -1,10 +1,26 @@
 import { Component } from "react";
 
 class Experience extends Component{
-  clickHandler = (event)=>{
-        console.log('Button click!')
-      }
+  state = {
+    message: "Click here!",
+    clicked: false
+  };
+ 
+  clickHandler = () => {
+    this.setState({ message: "Clicked!", clicked: true });
+    console.log("Clicked!")
+  };
+  
     render(){
+      const { message,clicked } = this.state;
+      let className = "subscribe-button";
+      if (!clicked) {
+        className += " subscribe-button_blue";
+      } else {
+        className += " subscribe-button_grey";
+      }
+   
+
       
         return(
             <div className="experience">
@@ -15,7 +31,7 @@ class Experience extends Component{
               <li>Frontend Developer, ABC Şirkəti (2020-2023)</li>
               <li>UI/UX Dizayner, XYZ Agentliyi (2017-2020)</li>
             </ul>
-            <button type="button" onClick={this.clickHandler}>Button click!!</button>
+            <button type="button" className={className} onClick={this.clickHandler}>{message}</button>
           </div>
           
         )
