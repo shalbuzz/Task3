@@ -5,8 +5,8 @@ class PersonalInfo extends Component{
         return(
             <div className="personal-info">
             <h2>Şəxsi Məlumatlar</h2>
-            <p>Ad: Fərid Əliyev</p>
-            <p>Yaş: 29</p>
+            <p>Ad: Shalbuz Eliverdiyev</p>
+            <p>Yaş: 19</p>
             <p>Yaşayış Yeri: Bakı, Azərbaycan</p>
           </div>
         );

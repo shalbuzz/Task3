@@ -6,8 +6,8 @@ class Contacts extends Component{
         <div>
              <div className="contacts">
         <h2>Əlaqə</h2>
-        <p>Telefon: +994 50 123 45 67</p>
-        <p>Email: ferid.aliyev@example.com</p>
+        <p>Telefon: +994 55 331 11 98</p>
+        <p>Email: aliverdiyev05@inbox.ru</p>
       </div>
         </div>
         )
